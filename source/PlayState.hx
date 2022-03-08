@@ -1031,6 +1031,27 @@ class PlayState extends MusicBeatState
 		iconP2.alpha = ClientPrefs.healthBarAlpha;
 		add(iconP2);
 		reloadHealthBarColors();
+	
+	        var songTxt = new FlxText(12, healthBarBG.y + 50, 0, SONG.song + " " + storyDifficultyText + " | PE+ 1.0", 18);
+		songTxt.setFormat(Paths.font("vcr.ttf"), 16, FlxColor.WHITE, RIGHT);
+		songTxt.setBorderStyle(OUTLINE, FlxColor.BLACK, 1.1);
+                songTxt.borderSize = 1.2;
+                songTxt.borderQuality = 1.5;
+    	        songTxt.scrollFactor.set();
+                songTxt.visible = !ClientPrefs.hideHud;
+		add(songTxt); 
+	
+                var judgementCounter = new FlxText(20, 0, 0, "", 20);
+		judgementCounter.setFormat(Paths.font("vcr.ttf"), 20, FlxColor.WHITE, FlxTextAlign.LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		judgementCounter.borderSize = 1.5;
+		judgementCounter.borderQuality = 2;
+		judgementCounter.scrollFactor.set();
+		judgementCounter.cameras = [camHUD];
+		judgementCounter.screenCenter(Y);
+		judgementCounter.text = 'Max Combo: ${maxCombo}\nSicks: ${sicks}\nGoods: ${goods}\nBads: ${bads}\nShits: ${shits}\nHealth: ${Std.string(Math.floor(Std.parseFloat(Std.string((maxHealthProb) / 2))))} %\n game not read that text';
+                judgementCounter.visible = ClientPrefs.showjud;
+	        // CODE BY XALETHECAT
+		add(judgementCounter);
 
 		scoreTxt = new FlxText(0, healthBarBG.y + 36, FlxG.width, "", 20);
 		scoreTxt.setFormat(Paths.font("vcr.ttf"), 20, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
