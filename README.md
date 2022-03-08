@@ -1,4 +1,4 @@
-# Friday Night Funkin' - Psych Engine
+# Friday Night Funkin' - Psych Engine PLUS
 Engine originally used on [Mind Games Mod](https://gamebanana.com/mods/301107), intended to be a fix for the vanilla version's many issues while keeping the casual play aspect of it. Also aiming to be an easier alternative to newbie coders.
 
 ## Installation:
@@ -9,6 +9,10 @@ Follow a Friday Night Funkin' source code compilation tutorial, after this you w
 To install LuaJIT do this: `haxelib git linc_luajit https://github.com/AndreiRudenko/linc_luajit ` on a Command prompt/PowerShell
 
 ...Or if you don't want your mod to be able to run .lua scripts, delete the "LUA_ALLOWED" line on Project.xml
+
+## Psych Engine Plus
+* JamuelTheGamer - Main Coder
+* CrazyFirey - Art/Code
 
 ## Credits:
 * Shadow Mario - Coding
