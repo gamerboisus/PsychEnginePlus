@@ -27,6 +27,8 @@ class MasterEditorMenu extends MusicBeatState
 		'Dialogue Portrait Editor',
 		'Character Editor',
 		'Chart Editor'
+		//'Menu Editor', COMING 
+		//'Stage Editor' SOON
 	];
 	private var grpTexts:FlxTypedGroup<Alphabet>;
 	private var directories:Array<String> = [null];
