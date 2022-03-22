@@ -25,22 +25,14 @@ using StringTools;
 
 class MainMenuState extends MusicBeatState
 {
-	public static var psychEngineVersion:String = '1.0'; //This is also used for Discord RPC
+	public static var psychEngineVersion:String = '1.1.1h'; //This is also used for Discord RPC
 	public static var curSelected:Int = 0;
 
 	var menuItems:FlxTypedGroup<FlxSprite>;
 	private var camGame:FlxCamera;
 	private var camAchievement:FlxCamera;
-	
-	var optionShit:Array<String> = [
-		'story_mode',
-		'freeplay',
-		#if MODS_ALLOWED 'mods', #end
-		#if ACHIEVEMENTS_ALLOWED 'awards', #end
-		'credits',
-		#if !switch 'donate', #end
-		'options'
-	];
+
+	var optionShit:Array<String> = CoolUtil.coolTextFile(Paths.getPreloadPath('images/mainmenu/mainmenulist.txt'));
 
 	var magenta:FlxSprite;
 	var camFollow:FlxObject;
