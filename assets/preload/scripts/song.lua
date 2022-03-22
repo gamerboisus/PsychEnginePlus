@@ -28,6 +28,8 @@ function onUpdate()
     setProperty('authortext.x',getProperty('whitebg.x'))
 end
 
+-- Kawai Sprite is main composer
+
 function onTweenCompleted(tag)
     if tag == 'songtweenin' then
         runTimer('tweentimer',3)
