@@ -1,0 +1,20 @@
+{	
+	"storymodeP":[0,0],
+	"freeplayP":[0,140],
+	"modsP":[0,280],
+	"awardsP":[0,420],
+	"creditsP":[0,560],
+	"donateP":[0,700],
+	"optionsP":[0,840],
+	"storymodeS":[1.0,1.0],
+	"freeplayS":[1.0,1.0],
+	"modsS":[1.0,1.0],
+	"awardsS":[1.0,1.0],
+	"creditsS":[1.0,1.0],
+	"donateS":[1.0,1.0],
+	"optionsS":[1.0,1.0],
+      "menuBGcolor":[253,232,113],
+	"menuCBGcolor":[253,113,155],
+      "menuColorShift":false,
+	"centerX":true
+}
